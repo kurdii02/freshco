@@ -329,4 +329,215 @@ font-family: "Anek Malayalam";
 margin: 0;
 }
 
+#big-card1, #big-card2{
+width: 540px;
+height: 415px;
+border-radius: 16px;
 
+}
+
+.blog-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#blog-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#big-card1{
+    background-image:
+    linear-gradient(rgba(35, 72, 0, 0.7), rgba(35, 72, 0, 0.7)), 
+    url('../img/blog/background.png');
+        background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#big-card2{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('../img/blog/background.png');
+        background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blog-section .btn{
+    width: 106px;
+height: 36px;
+border-radius: 18px;
+background-color: #e1e45b;
+font-size: 14px;
+color: #3f3f3f;
+font-weight: 400;
+font-family: "Anek Malayalam";
+border-color:#e1e45b ;
+}
+
+
+.blog-section .card-title{
+    font-size: 25px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Anek Malayalam";}
+
+    .blog-section .card-text{
+       
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Anek Malayalam";
+    }
+
+    .blog-section .date{
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Anek Malayalam";
+
+    }
+
+    .blog-section .card{
+        padding: 20px;
+        padding-top: 150px;
+    }
+
+    #footer-container{
+        background-image: url("../img/blog/homiuce015.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+height: 50%;    }
+
+    #footer-container img{
+        position: absolute;
+        bottom: -210px;
+    }
+#footer-row{
+    margin-top:50px
+}
+    #footer-container h2{
+        font-size: 48px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Anek Malayalam";
+max-width:420px ;
+
+    }
+
+    #footer-container .btn{
+        width: 121px;
+height: 50px;
+border-radius: 25px;
+background-color: #07a838;
+border-color: #07a838;
+font-size: 16px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+line-height: 2;
+margin-right: 20px;
+    }
+
+    #footer-container .btn:hover{
+    background-color: #ffffff;
+    color: #07a838;
+    
+    }
+
+#footer-container span{
+    background-color: #07a838;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    cursor: pointer;
+   border:0.5px solid #07a838;
+
+}
+    #facebook{
+        width: 35px;
+        height: 35px;
+        color: #ffffff;
+    }
+
+    #instagram{
+        width: 35px;
+height: 35px;
+color: #ffffff;
+
+    }
+    #footer-container span:hover{
+background-color: #ffffff;
+    }
+    #footer-container span:hover i{
+        color: #07a838;
+
+    }
+
+    .footer{
+        background-color: #003f28;   
+    padding: 20px 0;
+    height: 60%;
+    }
+
+        .footer h5{
+            font-size: 25px;
+color: #ffffff;
+font-weight: 500;
+font-family: "Anek Malayalam";
+        }
+
+        .footer a{
+            text-decoration: none;
+            font-size: 14px;
+line-height: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+margin-right: 40px;
+        }
+        .footer p{
+            width: 250px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Anek Malayalam";
+            text-align: left;
+            margin-bottom: 20px;
+
+        }
+        #main-container{
+height: 100vh;    
+padding: 0;    }
+
+.list-unstyled{
+            margin: 0;
+            margin-top: 65px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+
+        .footer img{
+            margin-bottom: 30px;
+        }
+        .line{
+            background-color: #ffffff;
+            width: 45px;
+height: 5px;
+border-radius: 10px;
+        }
+
+
+   
+
+   
