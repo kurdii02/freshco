@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     background-image: url("../img/white-concrete-wall.png");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
 }
 
 .hero-section{
@@ -415,11 +415,13 @@ border-color:#e1e45b ;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-height: 50%;    }
+height: 50%;  
+padding: 65px 20px;
+}
 
     #footer-container img{
         position: absolute;
-        bottom: -210px;
+        bottom: -158px;
     }
 #footer-row{
     margin-top:50px
@@ -549,8 +551,29 @@ border-radius: 10px;
 }
 
         }
+        @media (max-width: 767px) {
+        .footer{
+            height: fit-content;
+        }
+        #footer-container img{
+            display: none;
+        }
+        }
+        @media (max-width: 1400px) {
+        
+            .navbar-light .navbar-nav .nav-link{
+font-size: 12px;   }
 
-       
+.lang_img{
+    display: none;
+}
+#langDropdown{
+    display: none;
+}
+.lang{
+    padding: 0;
+}
+        }
         @media (min-width: 576px) {
             .left{
                 width:500px
@@ -610,4 +633,13 @@ width: 100%;                            }
                 max-width: 70%;
                 margin-top: 20px;
             }
+            }
+
+            @media (max-width:1200px){
+                #blog-row{
+flex-direction: column;       
+       }
+       #blog-row .col-md-6{
+max-width: 100%;
+       }  
             }
