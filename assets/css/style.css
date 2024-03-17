@@ -335,7 +335,7 @@ margin: 0;
 }
 
 #big-card1, #big-card2{
-width: 540px;
+max-width: 540px;
 height: 415px;
 border-radius: 16px;
 
@@ -345,6 +345,11 @@ border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+}
+.blog-section .container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -384,10 +389,11 @@ border-color:#e1e45b ;
 
 .blog-section .card-title{
     font-size: 25px;
-    line-height: 36px;
     color: #ffffff;
     font-weight: 600;
-    font-family: "Anek Malayalam";}
+    font-family: "Anek Malayalam";
+    max-width: 342px;
+}
 
     .blog-section .card-text{
        
@@ -395,6 +401,7 @@ border-color:#e1e45b ;
         color: #ffffff;
         font-weight: 400;
         font-family: "Anek Malayalam";
+        max-width: 700px;
     }
 
     .blog-section .date{
@@ -402,6 +409,7 @@ border-color:#e1e45b ;
         color: #ffffff;
         font-weight: 400;
         font-family: "Anek Malayalam";
+        max-width: 100px;
 
     }
 
@@ -510,7 +518,7 @@ font-family: "Anek Malayalam";
 margin-right: 40px;
         }
         .footer p{
-            width: 250px;
+            max-width: 250px;
             font-size: 14px;
             line-height: 18px;
             color: #ffffff;
@@ -643,3 +651,16 @@ flex-direction: column;
 max-width: 100%;
        }  
             }
+
+            @media (min-width: 767px) and (max-width:1360px) {
+                .list-unstyled{
+                    height: fit-content;
+            }
+            .list-unstyled li{
+                margin-top: 5px;
+            }
+            .footer{
+                height: fit-content;
+            }
+        
+        }
