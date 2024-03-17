@@ -126,7 +126,12 @@ ul .nav-link:hover{
     
 
 }
-
+.right img{
+    max-width:100%;
+}
+.right{
+    max-width: 50%;
+}
 .navbar-brand{
 padding-left: 70px;}
 
@@ -537,7 +542,72 @@ height: 5px;
 border-radius: 10px;
         }
 
+        @media (max-width: 896px){
+          
+.right img{
+    max-width: 130%;
+}
 
-   
+        }
 
-   
+       
+        @media (min-width: 576px) {
+            .left{
+                width:500px
+            }
+            .left h2, .left p, .left .btns{
+                width: 300px;
+    
+            }
+        }
+
+        @media (max-width: 740px){
+          
+            .right{
+            z-index: 1;
+
+           }
+            .right img{
+                max-width: 200%;
+            }
+            .left h2, .left p, .left .btns{
+z-index: 2;    
+            }
+        }
+            @media (max-width: 655px)  {
+            .right{
+                display: none;
+            }
+            .left{
+                width: 100%;
+            }
+            .left h2, .left p, .left .btns{
+width: 100%;                            }
+            
+            .hero{
+                padding-bottom: 20px;
+            }
+            }
+
+            @media (max-width: 1217px)  {
+            
+            .col-md-4{
+                margin-right: 0;
+            }
+            .small-photo{
+                max-width: 110px;
+            }
+            }
+
+            @media (max-width: 970px)  {
+            #main-row{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .col-md-4{
+                max-width: 70%;
+                margin-top: 20px;
+            }
+            }
