@@ -61,6 +61,7 @@ line-height: 36px;
 color: #ffffff;
 font-weight: 300;
 font-family: "Anek Malayalam";
+max-width: 415px;
 }
 .shop{
     width: 106px;
@@ -86,6 +87,7 @@ padding: 0 90px;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
+    max-width: 700px;
 }
 
 .dots{
@@ -582,15 +584,7 @@ font-size: 12px;   }
     padding: 0;
 }
         }
-        @media (min-width: 576px) {
-            .left{
-                width:500px
-            }
-            .left h2, .left p, .left .btns{
-                width: 300px;
-    
-            }
-        }
+       
 
         @media (max-width: 740px){
           
@@ -609,9 +603,7 @@ z-index: 2;
             .right{
                 display: none;
             }
-            .left{
-                width: 100%;
-            }
+           
             .left h2, .left p, .left .btns{
 width: 100%;                            }
             
@@ -628,6 +620,12 @@ width: 100%;                            }
             .small-photo{
                 max-width: 110px;
             }
+            }
+
+            @media (min-width: 655px) and (max-width:810px)  {
+                .left p{
+                    width: 317px;
+                }
             }
 
             @media (max-width: 970px)  {
@@ -663,4 +661,17 @@ max-width: 100%;
                 height: fit-content;
             }
         
+        }
+
+        @media (max-width:411px){
+            .left p{
+               max-width:317px;
+            }
+          .left{
+            padding: 0 20px;
+          }
+            .navbar-brand{
+                padding: 0;
+                margin: 0;
+            }
         }
