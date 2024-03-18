@@ -122,7 +122,7 @@ padding: 5px 10px 5px 10px;
 
 ul .nav-link:hover{
     background-color:rgb(228, 176, 44) ;
-    color: #50a83e !important;
+    color: rgb(7, 220, 7) !important;
     transition: all 0.3s;
 
     
@@ -675,5 +675,5 @@ max-width: 100%;
                 padding: 0;
                 margin: 0;
             }
-           
+         
         }
