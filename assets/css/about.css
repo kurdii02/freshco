@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+body{
+    background-image: url("../img/white-concrete-wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section{
+
+
+   background-image: url("../img/cold-press-juice-scaled.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+}
+
+.hero-section::before{
+    content:"";
+    background-color: rgba(30, 30, 30,0.4);
+    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 79%;
+   
+}
+
+.hero{
+   
+    padding: 220px 0;
+    position: relative;
+overflow: hidden;
+    
+}
+ul{
+    margin-left: 20px;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+    padding-right: 110px;
+    justify-content: center;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items a{
+    padding: 5px;
+}
+.lang_img{
+    width: 15px;
+    height: 15px;
+}
+#langDropdown{
+    color: #ffffff;
+}
+.text-container{
+    position: absolute;
+right: 1211px;
+    padding: 111px 108px 219px 160px;
+    background-color: rgba(0, 107, 49,0.42);
+    border-radius: 50%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.hero h2{
+    font-size: 31px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Anek Malayalam";
+z-index: 2;
+width: 121px;
+line-height: 1.5;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Anek Malayalam";
+margin-right: 20px;
+border-radius: 30px;
+padding: 5px 10px 5px 10px;
+}
+
+ .nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+    color: #50a83e !important;
+    background-color: #ebe049;
+transition: all 0.3s;
+}
+
+.navbar-brand{
+    padding-left: 70px;}
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+       
+        margin:50px 70px 50px 70px !important ;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        width: 150px;
+        justify-content: space-around;
+
+
+    }
+    .pullet{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #4ea43f;  
+      }
+      .line{
+        width:0px;
+        height: 12px;
+        background-color: #ffffff;
+        border: 0.35px solid #6d6d6d;
+    }
+
+    .home{
+        margin: 0;
+        font-size: 12px;
+color: #393939;
+font-weight: 300;
+font-family: "Anek Malayalam";
+text-align: left;
+    }
+
+    .about{
+        color: rgba(77,164,63);
+        font-size: 12px;
+line-height: 25px;
+font-weight: 300;
+font-family: "Anek Malayalam";
+text-align: left;
+    }
+
+    .main-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .pics{
+        display: flex;
+        flex-direction: column;
+min-height: 300px;
+min-width: 500px;
+       position: relative;
+       margin-top: 30px;
+       margin-left: 10px;
+    }
+    .pics img{
+        margin-bottom: 20px;
+    }
+
+    .first {
+        top: 0;
+        left: 0;
+        z-index: 2; 
+        border-radius: 16px;
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        background-image: url("../img/square.png");
+background-size: cover;
+background-position:center;
+    }
+    .about-section {
+        display: flex;
+flex-direction: column;
+align-items: start;
+margin-top: 50px;
+
+}
+      .second {
+        top: 70px;
+        left: 150px;
+        border-radius: 16px;
+        position: absolute;
+        width: 300px;
+        height: 200px;
+background-image: url("../img/lemon.png");
+background-size: cover;
+      }
+
+      .about-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        
+      }
+      .about-title img{
+        width:30px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      .about-title h2{
+        font-size: 20px;
+color: #50a83e;
+font-weight: 600;
+font-family: "Anek Malayalam";
+margin: 0;
+height: 30px;      }
+     .about-section p{
+font-size: 14px;
+line-height: 22px;
+color: #6a6a6a;
+font-weight: 300;
+font-family: "Anek Malayalam";
+text-align: left;
+
+     }
