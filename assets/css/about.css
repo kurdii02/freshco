@@ -686,6 +686,11 @@ max-width: 300px;
           
         }
 
+        @media (max-width:450px){
+.left, .quality-right{
+padding: 20px;
+}
+        }
         @media (max-width:820px){
           .right{
             display: none;
