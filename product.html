@@ -30,11 +30,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Home <span
+                        <a class="nav-link" href="index.html" style="color: #ffffff;">Home <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">About us</a>
+                        <a class="nav-link" href="about.html" style="color: #ffffff;">About us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -50,16 +50,16 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Gallery</a>
+                        <a class="nav-link" href="gallery.html" style="color: #ffffff;">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color: #ffffff;">Our Agencies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">News</a>
+                        <a class="nav-link" href="news.html" style="color: #ffffff;">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Contact Us</a>
+                        <a class="nav-link" href="contact.html" style="color: #ffffff;">Contact Us</a>
                     </li>
                 </ul>
 
@@ -104,8 +104,11 @@
         <div class="about">Our Products</div>
     </div>
     <div class="container-fluid">
-    <aside class="side-menu">
+        <button id="showMenuButton"><i class="fas fa-filter"></i></button>
 
+    <aside class="side-menu" id="side-menu">
+
+        <div class="menu-container">
         <form class="category">
             <div class="side-title">
             <h2>Category</h2>
@@ -277,7 +280,7 @@
             </form>
 
             <button type="button">Filter</button>
-
+        </div>
     </aside>
 
     <div class="products">

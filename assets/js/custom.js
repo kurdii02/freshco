@@ -198,3 +198,17 @@ function updateActiveLink(page) {
 window.onload = function () {
     generatePaginationLinks();
 };
+
+
+// Select the container where you want to append the button
+// Select the container where you want to append the button
+// Select the container where you want to append the button
+// Get references to the button and side menu
+var showMenuButton = document.getElementById('showMenuButton');
+var sideMenu = document.querySelector('.side-menu');
+
+// Add event listener to the button to toggle the visibility of the side menu
+showMenuButton.addEventListener('click', function() {
+    // Toggle the 'show' class on the side menu
+    sideMenu.classList.toggle('show');
+});
