@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+
+}
+body{
+    background-image: url("../img/white-concrete-wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section{
+
+
+   background-image: url("../img/cold-press-juice-scaled.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+position: relative;
+}
+
+.hero-section::before{
+    content:"";
+    background-color: rgba(30, 30, 30,0.4);
+    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   
+}
+
+.hero{
+   
+    padding: 220px 0;
+    position: relative;
+    
+overflow: hidden;
+    
+}
+ul{
+    margin-left: 20px;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+    padding-right: 110px;
+    justify-content: center;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items a{
+    padding: 5px;
+}
+.lang_img{
+    width: 15px;
+    height: 15px;
+}
+#langDropdown{
+    color: #ffffff;
+}
+.text-container{
+    position: absolute;
+right: 80%;
+    padding: 111px 108px 219px 160px;
+    background-color: rgba(0, 107, 49,0.42);
+    border-radius: 50%;
+    
+
+}
+.hero h2{
+    font-size: 29px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Anek Malayalam";
+z-index: 2;
+width: 165px;
+line-height: 1.5;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Anek Malayalam";
+margin-right: 20px;
+border-radius: 30px;
+padding: 5px 10px 5px 10px;
+}
+
+ .nav-item.active .nav-link,
+.nav-item:hover .nav-link {
+    color: #50a83e !important;
+    background-color: #ebe049;
+transition: all 0.3s;
+}
+
+.navbar-brand{
+    padding-left: 70px;}
+
+    .category, .flavors, .size, .price{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        max-width: 277px;
+        border-radius: 20px;
+filter: drop-shadow(0 0 2px rgba(56,56,56,0.16));
+background-color: #ffffff;
+padding: 20px;
+margin-bottom: 20px;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .input{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+    }
+    label{
+        font-size: 17px;
+line-height: 30px;
+color: #4d4d4d;
+font-weight: 300;
+font-family: "Anek Malayalam";
+    }
+    .side-menu h2{
+        font-size: 21px;
+line-height: 22px;
+color: #087134;
+font-weight: 500;
+font-family: "Anek Malayalam";
+text-align: left;
+    }
+    .line{
+        width:150px;
+        height: 1px;
+        background-color: #006b31;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        width: 150px;
+        justify-content: space-around;
+        margin: 50px 0 0 70px;
+
+
+    }
+    .pullet{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #4ea43f;  
+      }
+      .line-t{
+        width:0px;
+        height: 12px;
+        background-color: #ffffff;
+        border: 0.35px solid #6d6d6d;
+    }
+
+    .home{
+        margin: 0;
+        font-size: 12px;
+color: #393939;
+font-weight: 300;
+font-family: "Anek Malayalam";
+text-align: left;
+text-decoration: none;
+    }
+
+    .about{
+        color: rgba(77,164,63);
+        font-size: 12px;
+line-height: 25px;
+font-weight: 300;
+font-family: "Anek Malayalam";
+text-align: left;
+    }
+
+.range{
+    margin:50px 0 50px 0 ;
+}
+    .range-slider {
+        height: 4px;
+        position: relative;
+        background-color: #e1e9f6;
+        border-radius: 2px;
+      }
+      .range-selected {
+        height: 100%;
+        left: 20%;
+        right:50%;
+        position: absolute;
+        border-radius: 5px;
+        background-color: #3bb77e;      }
+
+      .range-input {
+        position: relative;
+      }
+      .range-input input {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -5px;
+        background: none;
+        pointer-events: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      .range-input input::-webkit-slider-thumb {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #3bb77e;
+        pointer-events: auto;
+        -webkit-appearance: none;
+      }
+      .range-input input::-moz-range-thumb {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 3px solid #1b53c0;
+        background-color: #fff;
+        pointer-events: auto;
+        -moz-appearance: none;
+      }
+      .range-price {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .range-price label {
+ margin-bottom: 0;
+        font-weight: 300;
+font-family: "Anek Malayalam";
+font-size: 11px;
+      }
+      .range-price input {
+        width: 70px;
+        border: none;
+        color: #2c9238;
+font-size: 11px;
+font-weight: 300;
+font-family: "Anek Malayalam";        
+background-color:inherit ;
+    }
+      .range-price input:first-of-type {
+        margin-right: 15px;
+      }
+
+      .side-menu button{
+        width: 106px;
+height: 36px;
+border-radius: 18px;
+background-color: #49a33f;
+border: 0.7px solid #ffffff;
+font-size: 14px;
+line-height: 36px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+cursor: pointer;
+border: 0.7px solid #80c141 ;
+
+}
+.side-menu button:hover
+{
+    background-color: #ffffff;
+    color: #80c141;
+}
+.min-price{
+    width: 122px;
+}
+.max-price{
+    width:100px;
+}
+.container-fluid{
+    display: flex;
+    width:90%;
+    margin: 70px 10px 20px 70px;
+   
+}
+
+.products{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 112px; 
+    border-radius: 24px;
+background-color: #ffffff;
+    
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: none;
+   font-size: 15px;
+    margin-right: 5px;
+    border-radius: 15px;
+background-color: #f2f3f4;
+color: #606060;
+font-weight: 400;
+font-family: "Anek Malayalam";
+
+}
+.pagination i{
+    font-size: 15px;
+}
+
+.pagination a.active {
+    background-color: #80c141;
+        color: #fff;
+}
+
+
+/* Product card styles */
+.product-card {
+    margin-bottom: 10px;
+    width: 280px;
+    height: 400px;
+    /* display: inline-block; */
+    text-align: center;
+border-radius: 16px;
+background-color: #ffffff;
+border: 0.35px solid #c6c6c6;
+padding-top: 20px;
+margin-bottom: 50px;
+margin-right: 20px;
+}
+.product-content{
+    padding: 30px;
+    text-align: left;
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+.product-grid {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+    
+}
+
+
+
+.product-card h2{
+    font-size: 15px;
+    color: #b1b1b1;
+    font-weight: 400;
+    font-family: "Anek Malayalam";
+margin: 0;}
+
+.product-card p{
+    font-size: 15px;
+line-height: 37px;
+color: #353535;
+font-weight: 500;
+font-family: "Anek Malayalam";
+margin: 0;
+margin-bottom: 10px;
+
+}
+
+.product-card .product-info p{
+    font-size: 15px;
+    line-height: 37px;
+    color: #2c9238;
+    font-weight: 500;
+    font-family: "Anek Malayalam";
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+.product-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-card button{
+    width: 115px;
+height: 27px;
+border-radius: 13px;
+background-color: #80c141;
+font-size: 11px;
+line-height: 27px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+border: none;
+cursor: pointer;
+border: 0.7px solid #80c141;
+}
+
+.product-card button:hover{
+    background-color: #ffffff;
+    color: #80c141;
+
+}
