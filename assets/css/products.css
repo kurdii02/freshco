@@ -15,10 +15,10 @@ body {
 .hero-section {
 
 
-    background-image: url("../img/cold-press-juice-scaled.png");
+    background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     position: relative;
     width: 100%;
 
@@ -26,7 +26,7 @@ body {
 
 .hero-section::before {
     content: "";
-    background-color: rgba(30, 30, 30, 0.4);
+    background-color: rgba(30, 30, 30, 0.5);
     display: block;
     position: absolute;
     top: 0;
@@ -37,14 +37,67 @@ body {
 }
 
 .hero {
-
-    padding: 220px 0;
+display: flex;
+justify-content: space-around;
+align-items: start;
+    padding-bottom: 150px;
     position: relative;
     overflow: hidden;
 
 }
+.products-container{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+    width: 540px;
+height: 255px;
+border-radius: 20px;
+filter: drop-shadow(0 0 2px rgba(56,56,56,0.16));
+background-color: #ffffff;
+padding-left: 30px;
+padding-right:60px ;
+z-index: 1000;
 
-ul {
+
+}
+#imageContainer{
+    width: 204px;
+height: 180px;
+border-radius: 23px;
+filter: drop-shadow(0 0 2px rgba(56,56,56,0.16));
+background-color: #ffffff;
+text-align: center;
+padding: 5px;
+
+}
+
+
+
+#textList{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+#textList a{
+    padding: 3px;
+    font-size: 17px;
+font-weight: 300;
+font-family: "Anek Malayalam";
+cursor: pointer;
+color: #353535;
+}
+
+
+#textList a:hover{
+    color: #006b31;
+}
+
+.selected-text {
+    color: #006b31 !important;
+}
+
+.navbar ul {
     margin-left: 20px;
 }
 
@@ -76,7 +129,8 @@ ul {
 
 .text-container {
     position: absolute;
-    right: 80%;
+    right: 79%;
+    top: 50%;
     padding: 111px 108px 219px 160px;
     background-color: rgba(0, 107, 49, 0.42);
     border-radius: 50%;
@@ -107,8 +161,7 @@ ul {
     padding: 5px 10px 5px 10px;
 }
 
-.nav-item.active .nav-link,
-.nav-item:hover .nav-link {
+ul .nav-link:hover {
     color: #50a83e !important;
     background-color: #ebe049;
     transition: all 0.3s;
@@ -466,6 +519,67 @@ label {
 
 }
 
+.footer{
+    background-color: #003f28;   
+padding: 20px 0;
+height: 60%;
+}
+
+    .footer h5{
+        font-size: 25px;
+color: #ffffff;
+font-weight: 500;
+font-family: "Anek Malayalam";
+line-height: 1.5;
+    }
+
+    .footer a{
+        text-decoration: none;
+        font-size: 14px;
+line-height: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+margin-right: 40px;
+    }
+    .footer p{
+        max-width: 400px;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Anek Malayalam";
+        text-align: left;
+        margin-bottom: 20px;
+
+    }
+   
+
+.list-unstyled{
+        margin: 0;
+        margin-top: 65px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .footer img{
+        margin-bottom: 30px;
+    }
+    .line-footer{
+        background-color: #ffffff;
+        width: 45px;
+height: 5px;
+border-radius: 10px;
+    }
+
+    .footer .col-md-2{
+        margin-top:20px;
+        
+    }
+
+
 
 @media (min-width: 767px) and (max-width:1360px) {
     .list-unstyled{
@@ -501,21 +615,50 @@ padding: 0;
     font-size: 12px;   }
 }
 
-@media (max-width:1360px){
+@media (max-width:1350px){
+    
     .text-container{
-right: auto;
-margin-left: -100px;
-
+        right: 75%;
+    }
+}
+@media (max-width:1133px){
+    
+    .text-container{
+        right: 70%;
+    }
+}
+@media (max-width:950px){
+    
+    .text-container{
+        right: 65%;
+    }
+}
+@media (max-width:815px){
+    
+    .text-container{
+        right: 60%;
     }
 }
 
 @media (max-width:710px){
+    .text-container{
+        margin-top: 30px;
+        border-radius: 0;
+padding: 0;
+background-color: rgba(0, 107, 49, 0);
+position:initial;
+}
+.hero{
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
     .container-fluid{
         flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 100%;
     position: relative;
-
+margin: auto;
     }
    .products{
     align-items: center;
@@ -550,7 +693,7 @@ width: 100%;
     #showMenuButton{
         display: block;
     position: absolute;
-    top:-95px;
+    top:-37px;
     right: 0;
     background-color: #ffffff;
     color: #2c9238;
@@ -581,4 +724,36 @@ width: 100%;
         padding-left: 0;
     }
     
+}
+
+@media (max-width:540px){
+    .products-container{
+width: 300px;
+padding-right:20px ;
+padding-left: 20px;
+
+
+}
+#textList a{
+    padding: 1px;
+
+}
+#imageContainer{
+    width:150px ;
+    height: 130px;
+}
+#imageContainer img{
+    width:70px;
+    height: 120px;
+}
+
+
+}
+
+
+@media (max-width:360px){
+
+    .container-fluid{
+        width: 30%;
+    }
 }

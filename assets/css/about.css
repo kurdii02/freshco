@@ -96,11 +96,10 @@ border-radius: 30px;
 padding: 5px 10px 5px 10px;
 }
 
- .nav-item.active .nav-link,
-.nav-item:hover .nav-link {
+ul .nav-link:hover {
     color: #50a83e !important;
     background-color: #ebe049;
-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .navbar-brand{

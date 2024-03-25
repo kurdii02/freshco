@@ -212,3 +212,34 @@ showMenuButton.addEventListener('click', function() {
     // Toggle the 'show' class on the side menu
     sideMenu.classList.toggle('show');
 });
+
+
+// Get the list of text elements and the image display container
+var textList = document.getElementById('textList');
+var imageDisplay = document.getElementById('imageDisplay');
+
+// Get all text elements
+var textElements = textList.getElementsByTagName('a');
+textElements[0].classList.add('selected-text');
+
+// Add event listener to each text element
+for (var i = 0; i < textElements.length; i++) {
+    textElements[i].addEventListener('click', function(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Remove 'selected-text' class from all text elements
+        for (var j = 0; j < textElements.length; j++) {
+            textElements[j].classList.remove('selected-text');
+        }
+
+        // Add 'selected-text' class to the clicked text element
+        this.classList.add('selected-text');
+
+        // Get the image URL from the data attribute of the clicked text element
+        var imageUrl = this.getAttribute('data-image');
+
+        // Set the image source to the clicked image URL
+        imageDisplay.src = imageUrl;
+    });
+}
