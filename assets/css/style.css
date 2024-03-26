@@ -120,13 +120,10 @@ border-radius: 30px;
 padding: 5px 10px 5px 10px;
 }
 
-ul .nav-link:hover{
-    background-color:rgb(228, 176, 44) ;
-    color: rgb(7, 220, 7) !important;
+ul .nav-link:hover {
+    color: #006b31 !important;
+    background-color: #ebe049;
     transition: all 0.3s;
-
-    
-
 }
 .right img{
     max-width:100%;
@@ -270,11 +267,9 @@ font-family: "Anek Malayalam";
 .card-img-top{
     padding: 30px;
     max-height: 250px;
-    max-width: 300px;
+    max-width: 160px;
 }
-#juice{
-max-width: 160px;
-}
+
 
 .card-body{
     padding: 0 1.25rem 1.25rem 1.25rem;

@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+
+}
+
+body {
+    background-image: url("../img/white-concrete-wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section {
+
+
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+
+}
+
+.hero-section::before {
+    content: "";
+    background-color: rgba(30, 30, 30, 0.5);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero {
+display: flex;
+justify-content: space-around;
+align-items: start;
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+
+}
+.products-container{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+    width: 540px;
+height: 255px;
+border-radius: 20px;
+filter: drop-shadow(0 0 2px rgba(56,56,56,0.16));
+background-color: #ffffff;
+padding-left: 30px;
+padding-right:60px ;
+z-index: 1000;
+
+
+}
+#imageContainer{
+    width: 204px;
+height: 180px;
+border-radius: 23px;
+filter: drop-shadow(0 0 2px rgba(56,56,56,0.16));
+background-color: #ffffff;
+text-align: center;
+padding: 5px;
+
+}
+
+
+
+#textList{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+#textList a{
+    padding: 3px;
+    font-size: 17px;
+font-weight: 300;
+font-family: "Anek Malayalam";
+cursor: pointer;
+color: #353535;
+}
+
+
+#textList a:hover{
+    color: #006b31;
+}
+
+.selected-text {
+    color: #006b31 !important;
+}
+
+.navbar ul {
+    margin-left: 20px;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    padding-right: 110px;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items a {
+    padding: 5px;
+}
+
+.lang_img {
+    width: 15px;
+    height: 15px;
+}
+
+#langDropdown {
+    color: #ffffff;
+}
+
+.text-container {
+    position: absolute;
+    right: 79%;
+    top: 50%;
+    padding: 111px 108px 219px 160px;
+    background-color: rgba(0, 107, 49, 0.42);
+    border-radius: 50%;
+
+
+}
+
+.hero h2 {
+    font-size: 29px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Anek Malayalam";
+    z-index: 2;
+    width: 165px;
+    line-height: 1.5;
+}
+#showMenuButton{
+    display: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Anek Malayalam";
+    margin-right: 20px;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+}
+
+ul .nav-link:hover {
+    color: #006b31 !important;
+    background-color: #ebe049;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    padding-left: 70px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-around;
+    margin: 50px 0 0 70px;
+
+
+}
+
+.pullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4ea43f;
+}
+
+.line-t {
+    width: 0px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 0.35px solid #6d6d6d;
+}
+
+.home {
+    margin: 0;
+    font-size: 12px;
+    color: #393939;
+    font-weight: 300;
+    font-family: "Anek Malayalam";
+    text-align: left;
+    text-decoration: none;
+}
+
+.about {
+    color: rgba(77, 164, 63);
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: "Anek Malayalam";
+    text-align: left;
+}
+
+.product-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+    align-items: start;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.big-img{
+    width: 515px;
+height: 542px;
+border-radius: 38px;
+filter: drop-shadow(0 0 1.5px rgba(35,35,35,0.14));
+background-color: #ffffff;
+position: relative;
+
+}
+.big-img img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 340px;
+}
+.small-images{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+
+}
+.small-images img{
+    width: 32px;
+    height: 61px;
+
+}
+.selected-img {
+    border: 0.7px solid #64a63b;
+}
+
+.small-img{
+    width: 84px;
+height: 82px;
+border-radius: 25px;
+filter: drop-shadow(0 0 1.5px rgba(35,35,35,0.14));
+background-color: #ffffff;
+position: relative;
+cursor: pointer;
+
+
+}
+.product-inner .dropdown{
+    margin-top: 30px;
+}
+.dropdown i{
+    color: #31af05;
+}
+.navbar-nav .dropdown-menu{    z-index: 10000;
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+}
+#toggleButton{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+}
+.quantity,.size{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.order-details{
+    display: flex;
+    margin-bottom: 20px;
+}
+.order p{
+    font-size: 18px;
+color: #3b3b3b;
+font-weight: 500;
+font-family: "Anek Malayalam";
+margin: 10px;
+}
+.size select{
+    width: 143px;
+height: 33px;
+border-radius: 16px;
+background-color: #edeef5;
+border: none;
+}
+.quantity{
+    margin-right: 50px;
+}
+.quantity input{
+    width: 40px;
+    height: 33px;
+    background-color: inherit;
+    border: none;
+    text-align: center;
+}
+.btns{
+    display: flex;
+}
+
+.btns button:nth-child(1){
+    width: 137px;
+height: 32px;
+border-radius: 16px;
+background-color: #80c141;
+border: none;
+cursor: pointer;
+font-size: 13px;
+line-height: 33px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+margin-right: 10px;
+}
+.btns button:nth-child(2){
+    width: 137px;
+height: 32px;
+border-radius: 16px;
+background-color: #424242;
+border: none;
+cursor: pointer;
+font-size: 13px;
+line-height: 33px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+
+}
+.btns p{
+    font-size: 13px;
+line-height: 14px;
+color: #5d5d5d;
+font-weight: 500;
+font-family: "Anek Malayalam";
+}
+span{
+    font-size: 16px;
+line-height: 37px;
+color: #25931a;
+font-weight: 400;
+font-family: "Anek Malayalam";
+}
+
+
+ .fa-twitter,.btns .fa-facebook-f,.fa-pinterest-p,.fa-linkedin,.fa-discord,.fa-whatsapp{
+    color: #ffffff;
+    margin-top: 6px;
+
+}
+.btns a:nth-child(1){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #1877F2;
+    text-align: center;
+
+}
+.btns a:nth-child(2){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #1DA1F2;
+    text-align: center;
+}
+.btns a:nth-child(3){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #BD081C;
+    text-align: center;
+}
+.btns a:nth-child(4){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #0A66C2;
+    text-align: center;
+}
+.btns a:nth-child(5){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #BD081C;
+    text-align: center;
+}
+.btns a:nth-child(6){
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #25D366;
+    text-align: center;
+}
+.details h3{
+    font-size: 25px;
+    line-height: 37px;
+    color: #494949;
+    font-weight: 400;
+    font-family: "Anek Malayalam";}
+    .details p{
+        font-size: 16px;
+color: #6e6e6e;
+font-weight: 400;
+font-family: "Anek Malayalam";
+    }
+    .stock-container{
+        width: 62px;
+height: 27px;
+border-radius: 13px;
+background-color: #e5f8ed;
+text-align: center;
+    }
+    .stock-container p{
+        font-size: 11px;
+color: #10c23a;
+font-weight: 400;
+font-family: "Anek Malayalam";
+margin: 0;
+line-height: 29px;
+
+    }
+    .details h4{
+        font-size: 18px;
+color: #25931a;
+font-weight: 500;
+font-family: "Anek Malayalam";
+margin: 0;
+line-height: 1.5;
+    }
+  
+  .quantity-input {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .decrement-btn,
+  .increment-btn {
+    width: 37px;
+height: 37px;
+border-radius: 18px;
+background-color: #edeef5;
+    cursor: pointer;
+    border: none;
+  }
+  
+
+  
+  
+.btn-title p{
+    font-size: 17px;
+    line-height: 17px;
+    color: #393939;
+    font-weight: 400;
+    font-family: "Anek Malayalam";
+    margin-bottom: 5px;
+}
+.btn-line{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+border-top: 0.35px solid #9d9d9d;
+}
+.btn-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border-bottom: 3px solid black;
+    padding: 8px;
+    font-size: 11px;
+color: #242424;
+font-weight: 500;
+font-family: "Anek Malayalam";
+}
+.rem{
+    border-bottom: none;
+}
+tr td:nth-child(1){
+    text-align: left;
+}
+tr td:nth-child(2){
+    text-align: right;
+}
+
+
+.small-img img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.card{
+    width: 287px;
+    filter: drop-shadow(0 0 3.5px rgba(27,27,27,0.11));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+border-radius: 25px !important;
+background-color: #ffffff;
+border: 0.35px solid #c6c6c6 !important;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+
+  }
+  .carousel{
+    margin-bottom: 70px;
+    margin-top: 40px;
+  }
+  .card-img-top{
+    padding: 30px;
+    max-height: 260px;
+    max-width: 160px;
+}
+h5.card-title{
+    font-size: 15px;
+    color: #b1b1b1;
+    font-weight: 400;
+    font-family: "Anek Malayalam";
+    margin-bottom: 0;
+    margin-block-start:0;
+    margin-block-end: 0;
+}
+.card-text{
+    font-size: 15px;
+color: #353535;
+font-weight: 500;
+font-family: "Anek Malayalam";
+margin-bottom: 10px;
+}
+.btn-group button{
+    width: 117px;
+height: 27px;
+border-radius: 13px;
+background-color: #80c141;
+text-align: center;
+font-size: 11px;
+color: #ffffff;
+font-weight: 400;
+border: 0.7px solid #80c141;
+font-family: "Anek Malayalam";
+}
+.btn-group button:hover{
+    color: #80c141;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    border: 0.7px solid #80c141;
+}
+.card-price{
+    font-size: 15px;
+color: #2c9238;
+font-weight: 500;
+font-family: "Anek Malayalam";
+margin: 0;
+}
+
+  .carousel-btn {
+    position: absolute;
+    top: -18%;
+    bottom: 0;
+    right: 11%;
+    height: fit-content;
+    width: 30px; 
+    text-align: center;
+    line-height: 1.7; 
+    border: 0.7px solid #80c141;
+    border-radius: 50%;
+    color: #80c141;
+  }
+  .carousel-btn:hover{
+    background-color:#80c141 ;
+    color: #ffffff;
+  }
+  
+  .carousel-btn-prev {
+margin-right: 50px;  }
+  .carousel-btn:hover {
+    cursor: pointer;
+  }
+ .related h3{
+    font-size: 24px;
+line-height: 22px;
+color: #087134;
+font-weight: 500;
+font-family: "Anek Malayalam";
+text-align: left;
+margin-left: 145px;
+margin-top: 50px;
+ }
+.footer{
+    background-color: #003f28;   
+padding: 20px 0;
+height: 60%;
+}
+
+    .footer h5{
+        font-size: 25px;
+color: #ffffff;
+font-weight: 500;
+font-family: "Anek Malayalam";
+line-height: 1.5;
+    }
+
+    .footer a{
+        text-decoration: none;
+        font-size: 14px;
+line-height: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Anek Malayalam";
+margin-right: 40px;
+    }
+    .footer p{
+        max-width: 400px;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Anek Malayalam";
+        text-align: left;
+        margin-bottom: 20px;
+
+    }
+   
+
+.list-unstyled{
+        margin: 0;
+        margin-top: 65px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .footer img{
+        margin-bottom: 30px;
+    }
+    .line-footer{
+        background-color: #ffffff;
+        width: 45px;
+height: 5px;
+border-radius: 10px;
+    }
+
+    .footer .col-md-2{
+        margin-top:20px;
+        
+    }
