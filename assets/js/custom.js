@@ -66,9 +66,13 @@ function displayProducts(page) {
     gridWrapper.className = 'product-grid';
 
     productList.forEach(function (product, index) {
+        var productCardLink = document.createElement('a'); // Create <a> tag
+        productCardLink.href = 'product_inner.html'; // Set href attribute
+        productCardLink.classList.add('product-card-link'); // Add class for styling if needed
+        productCardLink.setAttribute('data-product-id', product.id); // Optionally set data attributes for product identification
+        
         var productCard = document.createElement('div');
         productCard.className = 'product-card';
-
 
         var img = document.createElement('img');
         img.src = product.image;
@@ -85,7 +89,6 @@ function displayProducts(page) {
         p.textContent = product.description;
         productContentContainer.appendChild(p);
 
-
         var productInfoContainer = document.createElement('div');
         productInfoContainer.classList.add('product-info');
 
@@ -100,21 +103,15 @@ function displayProducts(page) {
         cartIcon.classList.add('fas', 'fa-shopping-cart');
         button.appendChild(cartIcon);
 
-
-        productCard.appendChild(productInfoContainer);
-
-
         productInfoContainer.appendChild(price);
         productInfoContainer.appendChild(button);
 
-
         productContentContainer.appendChild(productInfoContainer);
 
-
         productCard.appendChild(productContentContainer);
+        productCardLink.appendChild(productCard); // Append product card to <a> tag
 
-
-        gridWrapper.appendChild(productCard);
+        gridWrapper.appendChild(productCardLink); // Append <a> tag to gridWrapper
 
         if ((index + 1) % 3 === 0 || index === productList.length - 1) {
             productListContainer.appendChild(gridWrapper);
@@ -123,6 +120,7 @@ function displayProducts(page) {
         }
     });
 }
+
 
 
 

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 
 }
 
@@ -35,6 +35,8 @@ body {
     height: 100%;
 
 }
+.details p{
+    max-width: 100%;}
 
 .hero {
 display: flex;
@@ -43,6 +45,7 @@ align-items: start;
     padding-bottom: 150px;
     position: relative;
     overflow: hidden;
+
 
 }
 .products-container{
@@ -56,7 +59,7 @@ filter: drop-shadow(0 0 2px rgba(56,56,56,0.16));
 background-color: #ffffff;
 padding-left: 30px;
 padding-right:60px ;
-z-index: 1000;
+z-index: 10;
 
 
 }
@@ -99,6 +102,11 @@ color: #353535;
 
 .navbar ul {
     margin-left: 20px;
+
+}
+nav{
+    overflow-x: visible !important;
+
 }
 
 .lang {
@@ -106,6 +114,8 @@ color: #353535;
     align-items: center;
     padding-right: 110px;
     justify-content: center;
+    overflow-x: visible !important;
+
 }
 
 .items {
@@ -126,6 +136,8 @@ color: #353535;
 #langDropdown {
     color: #ffffff;
 }
+
+
 
 .text-container {
     position: absolute;
@@ -160,6 +172,8 @@ color: #353535;
     border-radius: 30px;
     padding: 5px 10px 5px 10px;
 }
+
+
 
 ul .nav-link:hover {
     color: #006b31 !important;
@@ -224,6 +238,7 @@ ul .nav-link:hover {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    max-width: 50%;
 }
 .big-img{
     width: 515px;
@@ -269,6 +284,7 @@ filter: drop-shadow(0 0 1.5px rgba(35,35,35,0.14));
 background-color: #ffffff;
 position: relative;
 cursor: pointer;
+margin-left:10px ;
 
 
 }
@@ -278,8 +294,26 @@ cursor: pointer;
 .dropdown i{
     color: #31af05;
 }
-.navbar-nav .dropdown-menu{    z-index: 10000;
+ .dropdown-menu{   
+     z-index: 1000000;
+     
+    
 }
+
+.lang .dropdown{
+    overflow-x: visible !important;
+}
+.my-2{
+    overflow-x: visible !important;
+}
+
+#navbarSupportedContent{
+    overflow-x: visible !important;
+
+}
+
+
+
 
 .price{
     display: flex;
@@ -363,6 +397,7 @@ line-height: 14px;
 color: #5d5d5d;
 font-weight: 500;
 font-family: "Anek Malayalam";
+line-height: 1.5;
 }
 span{
     font-size: 16px;
@@ -452,7 +487,8 @@ color: #10c23a;
 font-weight: 400;
 font-family: "Anek Malayalam";
 margin: 0;
-line-height: 29px;
+text-align: center;
+margin-top: 5px;
 
     }
     .details h4{
@@ -462,6 +498,10 @@ font-weight: 500;
 font-family: "Anek Malayalam";
 margin: 0;
 line-height: 1.5;
+    }
+    .details{
+        margin-left:20px ;
+max-width: 50%;
     }
   
   .quantity-input {
@@ -484,7 +524,6 @@ background-color: #edeef5;
   
 .btn-title p{
     font-size: 17px;
-    line-height: 17px;
     color: #393939;
     font-weight: 400;
     font-family: "Anek Malayalam";
@@ -541,7 +580,8 @@ tr td:nth-child(2){
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 border-radius: 25px !important;
 background-color: #ffffff;
 border: 0.35px solid #c6c6c6 !important;
@@ -555,6 +595,8 @@ border: 0.35px solid #c6c6c6 !important;
   .carousel{
     margin-bottom: 70px;
     margin-top: 40px;
+    overflow-x: visible ;
+
   }
   .card-img-top{
     padding: 30px;
@@ -569,6 +611,7 @@ h5.card-title{
     margin-bottom: 0;
     margin-block-start:0;
     margin-block-end: 0;
+    line-height: 1.5;
 }
 .card-text{
     font-size: 15px;
@@ -628,7 +671,7 @@ margin-right: 50px;  }
   }
  .related h3{
     font-size: 24px;
-line-height: 22px;
+line-height: 1.5;
 color: #087134;
 font-weight: 500;
 font-family: "Anek Malayalam";
@@ -695,3 +738,130 @@ border-radius: 10px;
         margin-top:20px;
         
     }
+
+    @media (min-width: 767px) and (max-width:1360px) {
+        .list-unstyled{
+            height: fit-content;
+    }
+    .list-unstyled li{
+        margin-top: 5px;
+    }
+    .footer{
+        height: fit-content;
+    }
+
+}
+
+@media (max-width: 1400px) {
+        
+    .navbar-light .navbar-nav .nav-link{
+font-size: 16px;   }
+
+.lang_img{
+display: none;
+}
+#langDropdown{
+display: none;
+}
+.lang{
+padding: 0;
+}
+}
+
+
+@media(min-width:990px) and (max-width:1060px){
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 12px;   }
+}
+
+@media (max-width:1350px){
+    
+    .text-container{
+        right: 75%;
+    }
+}
+@media (max-width:1133px){
+    
+    .text-container{
+        right: 70%;
+    }
+}
+@media (max-width:950px){
+    
+    .text-container{
+        right: 65%;
+    }
+}
+@media (max-width:815px){
+    
+    .text-container{
+        right: 60%;
+    }
+}
+
+@media (max-width:710px){
+    .text-container{
+        margin-top: 30px;
+        border-radius: 0;
+padding: 0;
+background-color: rgba(0, 107, 49, 0);
+position:initial;
+}
+.hero{
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+
+.navbar-brand{
+    padding-left: 0;
+}
+}
+
+@media (max-width:540px){
+    .products-container{
+width: 300px;
+padding-right:20px ;
+padding-left: 20px;
+
+
+}
+#textList a{
+    padding: 1px;
+
+}
+#imageContainer{
+    width:150px ;
+    height: 130px;
+}
+#imageContainer img{
+    width:70px;
+    height: 120px;
+}
+
+
+}
+@media (max-width:1120px){
+    .product-inner{
+flex-direction: column;   
+align-items: center;
+}
+.images{
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.details{
+    max-width: 100%;
+}
+}
+
+@media (max-width:886px){
+.product-inner{
+    padding: 20px 10px;
+}
+
+.btns p{
+   width: 50px;
+}
+}
+

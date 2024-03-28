@@ -442,6 +442,7 @@ label {
     margin-right: 20px;
 }
 
+
 .product-content {
     padding: 30px;
     text-align: left;
@@ -479,6 +480,23 @@ label {
     margin: 0;
     margin-bottom: 10px;
 
+}
+
+.product-card-link {
+    text-decoration: none; 
+}
+
+.product-card-link:hover {
+    text-decoration: none;
+}
+
+.product-card:hover h2{
+    color: #006b31;
+}
+
+.product-card:hover img{
+transform: scale(1.1);
+transition: all 0.3s;
 }
 
 .product-card .product-info p {
