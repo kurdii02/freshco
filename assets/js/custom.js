@@ -26,7 +26,7 @@ rangeInput.forEach((input) => {
 var products = [
     { image: "assets/img/products/l1.png", name: "Freshco", description: "Lorem Ipsum is simply dummy 1", price: "5.00 JOD" },
     { image: "assets/img/products/s1.png", name: "Freshco", description: "Lorem Ipsum is simply dummy 2", price: "5.00 JOD" },
-    { image: "assets/img/products/single.png", name: "Freshco", description: "Lorem Ipsum is simply dummy 3", price: "5.00 JOD" },
+    { image: "assets/img/products/s1.png", name: "Freshco", description: "Lorem Ipsum is simply dummy 3", price: "5.00 JOD" },
     { image: " assets/img/products/s1.png", name: "Freshco", description: "Lorem Ipsum is simply dummy 4", price: "5.00 JOD" },
     { image: " assets/img/products/s1.png", name: "Freshco", description: "Lorem Ipsum is simply dummy 5", price: "5.00 JOD" },
     { image: " assets/img/products/s1.png", name: "Freshco", description: "Lorem Ipsum is simply dummy 6", price: "5.00 JOD" },
@@ -66,10 +66,10 @@ function displayProducts(page) {
     gridWrapper.className = 'product-grid';
 
     productList.forEach(function (product, index) {
-        var productCardLink = document.createElement('a'); // Create <a> tag
-        productCardLink.href = 'product_inner.html'; // Set href attribute
-        productCardLink.classList.add('product-card-link'); // Add class for styling if needed
-        productCardLink.setAttribute('data-product-id', product.id); // Optionally set data attributes for product identification
+        var productCardLink = document.createElement('a'); 
+        productCardLink.href = 'product_inner.html'; 
+        productCardLink.classList.add('product-card-link'); 
+        productCardLink.setAttribute('data-product-id', product.id); 
         
         var productCard = document.createElement('div');
         productCard.className = 'product-card';
@@ -109,9 +109,9 @@ function displayProducts(page) {
         productContentContainer.appendChild(productInfoContainer);
 
         productCard.appendChild(productContentContainer);
-        productCardLink.appendChild(productCard); // Append product card to <a> tag
+        productCardLink.appendChild(productCard); 
 
-        gridWrapper.appendChild(productCardLink); // Append <a> tag to gridWrapper
+        gridWrapper.appendChild(productCardLink); 
 
         if ((index + 1) % 3 === 0 || index === productList.length - 1) {
             productListContainer.appendChild(gridWrapper);
