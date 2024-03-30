@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 
 }
 body{
@@ -44,12 +44,27 @@ overflow: hidden;
 ul{
     margin-left: 20px;
 }
+nav{
+    overflow-x: visible !important;
 
+}
 .lang{
     display: flex;
     align-items: center;
     padding-right: 110px;
     justify-content: center;
+    overflow-x: visible !important;
+}
+.lang .dropdown{
+    overflow-x: visible !important;
+}
+.my-2{
+    overflow-x: visible !important;
+}
+
+#navbarSupportedContent{
+    overflow-x: visible !important;
+
 }
 .items{
     display: flex;
@@ -210,6 +225,7 @@ text-align: left;
         color: #606060;
         font-weight: 400;
         font-family: "Anek Malayalam";
+        line-height: 2.2;
     
     }
     
@@ -224,11 +240,12 @@ text-align: left;
 
     .media-card-link {
         margin:0 20px 50px 0;
-        width: 385px;
+        max-width: 385px;
         height: 317px;
         text-align: center;
         border: 0.35px solid #c6c6c6;
         border-radius: 25px;
+        overflow-x: clip;
         
     }
     .media-card{
@@ -397,4 +414,10 @@ margin-left: -100px;
         .pagination{
             margin-left: 0;
         }
+    }
+
+    @media (max-width:440px){
+    .media-card-link{
+        margin: 0 20px 50px 20px;
+    }
     }
