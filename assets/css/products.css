@@ -427,12 +427,10 @@ label {
 }
 
 
-/* Product card styles */
 .product-card {
     margin-bottom: 10px;
     width: 280px;
     height: 400px;
-    /* display: inline-block; */
     text-align: center;
     border-radius: 16px;
     background-color: #ffffff;
