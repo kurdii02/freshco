@@ -201,17 +201,20 @@ text-align: left;
         opacity: 0.769;
 
     }
+
+    .overlay:hover{
+        opacity: 0.8;
+    }
     
    
-    .first-media-card{
-        position: relative;
-    }
+   
     
     .overlay i {
         font-size: 79px;
         color: #ffffff;
         font-weight: 300;
         font-family: "Anek Malayalam";
+        overflow-x: visible;
     }
     
     .pagination a {
@@ -252,6 +255,7 @@ text-align: left;
         width: inherit;
         height: inherit;
         border-radius: inherit;
+        position: relative;
     }
  
 .media-card img{
