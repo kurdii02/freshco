@@ -489,3 +489,10 @@ ul .nav-link:hover {
         left: 5%;
     }
 }
+@media (max-width:500px){
+    .overlay{
+        left: 0;
+        max-width: 100%;
+   
+    }
+}
