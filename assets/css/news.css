@@ -315,8 +315,8 @@ ul .nav-link:hover {
 }
 
 .media-card {
-    width: inherit;
-    height: inherit;
+    /* width: inherit;*/
+    height: inherit; 
     border-radius: inherit;
     position: relative;
 }
@@ -491,8 +491,19 @@ ul .nav-link:hover {
 }
 @media (max-width:500px){
     .overlay{
-        left: 0;
-        max-width: 100%;
-   
-    }
+position: initial;    }
+.media-card img{
+display: none;
+}
+.media-card{
+    width: inherit;
+    height: fit-content;
+}
+.media-card-link{
+    width:350px;
+    border: none;
+    margin: 0;
+    margin-bottom: 20px;
+    height: fit-content;
+}
 }
