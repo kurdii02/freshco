@@ -178,9 +178,12 @@ additionalTextElement.textContent = 'Contrary to popular belief, Lorem Ipsum is 
 overlay.appendChild(additionalTextElement);
 
 // Create button
-var buttonElement = document.createElement('button');
-buttonElement.textContent = 'Read More'; // Replace 'Your Button Text' with your desired button text
-overlay.appendChild(buttonElement);
+// Create button
+var buttonAnchor = document.createElement('a');
+buttonAnchor.textContent = 'Read More'; // Replace 'Your Button Text' with your desired button text
+buttonAnchor.href = 'news_inner.html'; // Set the href attribute to navigate to 'news_inner.html'
+overlay.appendChild(buttonAnchor);
+
 
 // Append the overlay to the media card
 mediaCard.appendChild(overlay);

@@ -269,7 +269,7 @@ height: 227px;
     text-align: left;
 }
 
-.overlay button {
+.overlay a {
     width: 90px;
     height: 30px;
     border-radius: 15px;
@@ -281,13 +281,15 @@ height: 227px;
     font-weight: 400;
     font-family: "Anek Malayalam";
     cursor: pointer;
+    overflow-x:visible ;
 }
 
-.overlay button:hover {
+.overlay a:hover {
     color: #ffffff;
     background-color: #49a33f;
     border-color: #49a33f;
     transition: all 0.3s;
+    text-decoration: none;
 }
 
 
@@ -323,11 +325,13 @@ height: 227px;
     border-radius: 5px !important;
     border-radius: inherit;
     position: relative;
-    overflow-x: clip;
+    overflow-x: visible;
 
 }
 .news-card img{
     border-radius: 5px;
+    width: inherit;
+    height: inherit;
 
 }
 .related h4{

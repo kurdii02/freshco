@@ -230,7 +230,7 @@ ul .nav-link:hover {
     text-align: left;
 }
 
-.overlay button {
+.overlay a {
     width: 90px;
     height: 30px;
     border-radius: 15px;
@@ -242,9 +242,11 @@ ul .nav-link:hover {
     font-weight: 400;
     font-family: "Anek Malayalam";
     cursor: pointer;
+    overflow-x: visible;
 }
 
-.overlay button:hover {
+.overlay a:hover {
+    text-decoration: none !important;
     color: #49a33f;
     background-color: #ffffff;
     border-color: #49a33f;
