@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 
 }
 body{
@@ -44,12 +44,17 @@ overflow: hidden;
 ul{
     margin-left: 20px;
 }
+nav{
+    overflow-x: visible !important;
 
+}
 .lang{
     display: flex;
     align-items: center;
-    padding-right: 110px;
+    padding-right: 35px;
     justify-content: center;
+    overflow-x: visible !important;
+
 }
 .items{
     display: flex;
@@ -441,13 +446,23 @@ text-align: left;
             .circle ul {
                 position: absolute;
                 list-style-type: none;
+                overflow-x: visible;
                 
             }
-           
+            .lang .dropdown{
+                overflow-x: visible !important;
+            }
+            .my-2{
+                overflow-x: visible !important;
+            }
+            
+            #navbarSupportedContent{
+                overflow-x: visible !important;
+            
+            }
             .circle p{
                 display: inline;
                 font-size: 18px;
-line-height: 36px;
 color: #4f4f4f;
 font-weight: 500;
 font-family: "Anek Malayalam";
@@ -543,24 +558,51 @@ margin-left: 86px;
 
         @media (max-width: 1400px) {
         
-            .navbar-light .navbar-nav .nav-link{
-font-size: 16px;   }
-
-.lang_img{
-    display: none;
-}
-#langDropdown{
-    display: none;
-}
-.lang{
-    padding: 0;
-}
-        }
-
-        @media(min-width:990px) and (max-width:1060px){
-            .navbar-light .navbar-nav .nav-link{
-                font-size: 12px;   }
-        }
+           
+            .lang_img{
+                display: none;
+            }
+            #langDropdown{
+                display: none;
+            }
+            .lang{
+                padding: 0;
+            }
+                    }
+                    @media (max-width: 1429px) {
+                    
+                        .navbar-light .navbar-nav .nav-link{
+                            margin-right: 15px;
+                                        }        
+            
+                    
+                    }
+                    @media (max-width: 1240px) {
+                        .navbar-light .navbar-nav .nav-link{
+            margin-right: 10px;
+                        }        
+                    }
+                    @media (max-width: 1199px) {
+                        .navbar-light .navbar-nav .nav-link{
+                            margin-right: 5px;
+            
+                                }        
+                    
+                    }
+                    @media (max-width: 1199px) {
+                        .navbar-light .navbar-nav .nav-link{
+                            font-size: 14px;
+            
+                                }    
+                    }
+            
+                    @media (max-width:991px){
+                        .navbar-light .navbar-nav .nav-link{
+                            font-size: 19px;
+            
+                                }    
+                    }
+            
 
         @media (max-width:1240px){
             .text-container{

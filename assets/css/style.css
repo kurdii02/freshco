@@ -29,7 +29,7 @@ ul{
 .lang{
     display: flex;
     align-items: center;
-    padding-right: 110px;
+    padding-right: 35px;
     justify-content: center;
 }
 .items{
@@ -117,7 +117,6 @@ padding: 0 90px;
     font-family: "Anek Malayalam";
 margin-right: 20px;
 border-radius: 30px;
-padding: 5px 10px 5px 10px;
 }
 
 ul .nav-link:hover {
@@ -566,9 +565,7 @@ border-radius: 10px;
         }
         @media (max-width: 1400px) {
         
-            .navbar-light .navbar-nav .nav-link{
-font-size: 12px;   }
-
+           
 .lang_img{
     display: none;
 }
@@ -579,7 +576,39 @@ font-size: 12px;   }
     padding: 0;
 }
         }
-       
+        @media (max-width: 1429px) {
+        
+            .navbar-light .navbar-nav .nav-link{
+                margin-right: 15px;
+                            }        
+
+        
+        }
+        @media (max-width: 1240px) {
+            .navbar-light .navbar-nav .nav-link{
+margin-right: 10px;
+            }        
+        }
+        @media (max-width: 1199px) {
+            .navbar-light .navbar-nav .nav-link{
+                margin-right: 5px;
+
+                    }        
+        
+        }
+        @media (max-width: 1199px) {
+            .navbar-light .navbar-nav .nav-link{
+                font-size: 14px;
+
+                    }    
+        }
+
+        @media (max-width:991px){
+            .navbar-light .navbar-nav .nav-link{
+                font-size: 19px;
+
+                    }    
+        }
 
         @media (max-width: 740px){
           

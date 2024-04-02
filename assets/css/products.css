@@ -104,7 +104,7 @@ color: #353535;
 .lang {
     display: flex;
     align-items: center;
-    padding-right: 110px;
+    padding-right: 35px;
     justify-content: center;
 }
 
@@ -767,7 +767,53 @@ padding-left: 20px;
 
 
 }
-
+@media (max-width: 1400px) {
+        
+           
+    .lang_img{
+        display: none;
+    }
+    #langDropdown{
+        display: none;
+    }
+    .lang{
+        padding: 0;
+    }
+            }
+            @media (max-width: 1429px) {
+            
+                .navbar-light .navbar-nav .nav-link{
+                    margin-right: 15px;
+                                }        
+    
+            
+            }
+            @media (max-width: 1240px) {
+                .navbar-light .navbar-nav .nav-link{
+    margin-right: 10px;
+                }        
+            }
+            @media (max-width: 1199px) {
+                .navbar-light .navbar-nav .nav-link{
+                    margin-right: 5px;
+    
+                        }        
+            
+            }
+            @media (max-width: 1199px) {
+                .navbar-light .navbar-nav .nav-link{
+                    font-size: 14px;
+    
+                        }    
+            }
+    
+            @media (max-width:991px){
+                .navbar-light .navbar-nav .nav-link{
+                    font-size: 19px;
+    
+                        }    
+            }
+    
 
 @media (max-width:360px){
 
