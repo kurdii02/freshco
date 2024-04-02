@@ -98,7 +98,7 @@ nav {
     font-weight: 500;
     font-family: "Anek Malayalam";
     z-index: 2;
-    width: 148px;
+    width: 172px;
     line-height: 1.5;
 }
 
@@ -137,6 +137,7 @@ ul .nav-link:hover {
     padding: 111px 108px 219px 160px;
     background-color: rgba(0, 107, 49, 0.42);
     border-radius: 50%;
+    
 
 
 }
@@ -188,7 +189,6 @@ ul .nav-link:hover {
 .footer {
     background-color: #003f28;
     padding: 20px 0;
-    height: 60%;
 }
 
 .footer h5 {
@@ -259,6 +259,7 @@ ul .nav-link:hover {
 
     .footer {
         height: fit-content;
+        overflow: visible;
     }
 
 }
