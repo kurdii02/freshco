@@ -37,17 +37,15 @@
     <script>
       const CONFIGURATION = {
         "locations": [
-          {"title":"Freshco","address1":"Amman","address2":"6th circle","coords":{"lat":31.963545,"lng":35.872513},"placeId":"ChIJ5Sz52pGAhYAR1raOybzuDp8"},
-          {"title":"Escondido Grill","address1":"Amman","address2":"Al-Madina Al Monawara st","coords":{"lat":31.983940,"lng":35.866593},"placeId":"ChIJeyVKpNd_j4ARLUED10OEr1s"},
-          {"title":"Escondido Grill","address1":"Amman","address2":"Ar Reda st","coords":{"lat":31.951128,"lng":35.934997},"placeId":"ChIJgYMdZvGAhYAR2ifWKOR5ek8"},
-          {"title":"Escondido Grill","address1":"Amman","address2":"Abdoun Circle","coords":{"lat":31.949095,"lng":35.892975},"placeId":"ChIJk_FWiDmHhYARgDVidBVO_RM",},
-          {"title":"Escondido Grill","address1":"Az-Zarqa","address2":"Mecca st","coords":{"lat":32.085924,"lng":36.090270},"placeId":"ChIJ_2knd4-HhYARI5PPNZ7aasA"},
-          {"title":"Escondido Grill","address1":"Az-Zarqa","address2":"Al-Saadeh St","coords":{"lat":32.0637631,"lng":36.0891443},"placeId":"ChIJSwWfLT9-j4ARMGcgMs-tBRE"},
-          {"title":"Escondido Grill","address1":"Irbid","address2":"University St","coords":{"lat":32.534145,"lng":35.852476},"placeId":"ChIJtYdd3IR-j4ARSybFjVnGTBw"},
+          {"title":"Al-Madina Al-Monawara Street","address1":"Al-Madina Al-Monawara St","address2":"Amman, Jordan","coords":{"lat":31.981060872597762,"lng":35.865750354631054},"placeId":"EidBbC1NYWRpbmEgQWwtTW9uYXdhcmEgU3QsIEFtbWFuLCBKb3JkYW4iLiosChQKEgktE2JttaEcFRFZ3bR3vFD_eBIUChIJr4F5XbhfGxUR6GXc-MAwHGM"},
+          {"title":"Abdoun Circle","address1":"Abdoun Cir.","address2":"Amman, Jordan","coords":{"lat":31.94896689396477,"lng":35.89286412209017},"placeId":"EhpBYmRvdW4gQ2lyLiwgQW1tYW4sIEpvcmRhbiIuKiwKFAoSCcV2BT3zoBwVETRl9v0nT3zSEhQKEgmvgXlduF8bFRHoZdz4wDAcYw"},
+          {"title":"7th Circle","address1":"7th Cir.","address2":"Amman, Jordan","coords":{"lat":31.95964488999443,"lng":35.85884363638457},"placeId":"Ehc3dGggQ2lyLiwgQW1tYW4sIEpvcmRhbiIuKiwKFAoSCR2jIfwOoRwVEVDzSGLIcY9uEhQKEgmvgXlduF8bFRHoZdz4wDAcYw"},
+          {"title":"Street Number 16","address1":"Street Number 16، Az-Zarqa","address2":"Jordan","coords":{"lat":32.088907010264585,"lng":36.098399585319505},"placeId":"EiNTdHJlZXQgTnVtYmVyIDE22IwgQXotWmFycWEsIEpvcmRhbiIuKiwKFAoSCdOsGIIbcBsVEZjw8tW7xDGKEhQKEgmDuNt2j2UbFRHxocfD7hO7bQ"},
+          {"title":"University Street","address1":"University St","address2":"Irbid, Jordan","coords":{"lat":32.533471848702746,"lng":35.85171964774625},"placeId":"EhxVbml2ZXJzaXR5IFN0LCBJcmJpZCwgSm9yZGFuIi4qLAoUChIJQzQq7up2HBUR-sD-6WGmegwSFAoSCVMErG2RdhwVEYJ9H9gT4RZU"}
         ],
-        "mapOptions": {"center":{"lat":32.0,"lng":36.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+        "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
         "mapsApiKey": "AIzaSyBowhmpJ1mHtqSEVWK5t0SI1IDjYWBZCes",
-        "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":true}
+        "capabilities": {"input":true,"autocomplete":true,"directions":true,"distanceMatrix":true,"details":true,"actions":false}
       };
 
     </script>
@@ -66,7 +64,7 @@
     <!-- Uses components from the Extended Component Library; see
          https://github.com/googlemaps/extended-component-library for more information
          on these HTML tags and how to configure them. -->
-    <gmpx-api-loader key="AIzaSyBowhmpJ1mHtqSEVWK5t0SI1IDjYWBZCes" solution-channel="GMP_QB_locatorplus_v10_cABDF"></gmpx-api-loader>
+    <gmpx-api-loader key="AIzaSyBowhmpJ1mHtqSEVWK5t0SI1IDjYWBZCes" solution-channel="GMP_QB_locatorplus_v10_cABCDE"></gmpx-api-loader>
     <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
   </body>
 </html>
