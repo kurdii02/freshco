@@ -1,11 +1,309 @@
-gmp-map {
-    height: 100%;
-  }
-  
-  /* Optional: Makes the sample page fill the window. */
-  html,
-  body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
-  }
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-image: url("../img/white-concrete-wall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section {
+
+
+    background-image: url("../img/gallery.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    background-color: rgba(30, 30, 30, 0.4);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero {
+
+    padding: 220px 0;
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+ul {
+    margin-left: 20px;
+}
+
+nav {
+    overflow-x: visible !important;
+
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    padding-right: 110px;
+    justify-content: center;
+    overflow-x: visible !important;
+}
+
+.lang .dropdown {
+    overflow-x: visible !important;
+}
+
+.my-2 {
+    overflow-x: visible !important;
+}
+
+#navbarSupportedContent {
+    overflow-x: visible !important;
+
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items a {
+    padding: 5px;
+}
+
+.lang_img {
+    width: 15px;
+    height: 15px;
+}
+
+#langDropdown {
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 31px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Anek Malayalam";
+    z-index: 2;
+    width: 148px;
+    line-height: 1.5;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 19px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Anek Malayalam";
+    margin-right: 20px;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+}
+
+ul .nav-link:hover {
+    color: #006b31 !important;
+    background-color: #ebe049;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    padding-left: 35px;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+    margin: 50px 0 50px 0 !important;
+}
+
+.text-container {
+    position: absolute;
+    right: 80%;
+    padding: 111px 108px 219px 160px;
+    background-color: rgba(0, 107, 49, 0.42);
+    border-radius: 50%;
+
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: space-around;
+    margin: 20px 0 40px 50px;
+
+
+}
+
+.pullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4ea43f;
+    margin-right: 5px;
+}
+
+.line {
+    width: 0px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 0.35px solid #6d6d6d;
+}
+
+.home {
+    margin: 0;
+    font-size: 12px;
+    color: #393939;
+    font-weight: 300;
+    font-family: "Anek Malayalam";
+    text-align: left;
+    text-decoration: none;
+}
+
+.about {
+    color: rgba(77, 164, 63);
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: "Anek Malayalam";
+    text-align: left;
+}
+
+.footer {
+    background-color: #003f28;
+    padding: 20px 0;
+    height: 60%;
+}
+
+.footer h5 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Anek Malayalam";
+    line-height: 1.5;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Anek Malayalam";
+    margin-right: 40px;
+}
+
+.footer p {
+    max-width: 400px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Anek Malayalam";
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+
+.list-unstyled {
+    margin: 0;
+    margin-top: 65px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.footer img {
+    margin-bottom: 30px;
+}
+
+.line-footer {
+    background-color: #ffffff;
+    width: 45px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.footer .col-md-2 {
+    margin-top: 20px;
+
+}
+
+
+@media (min-width: 767px) and (max-width:1360px) {
+    .list-unstyled {
+        height: fit-content;
+    }
+
+    .list-unstyled li {
+        margin-top: 5px;
+    }
+
+    .footer {
+        height: fit-content;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .lang_img {
+        display: none;
+    }
+
+    #langDropdown {
+        display: none;
+    }
+
+    .lang {
+        padding: 0;
+    }
+    
+}
+
+
+@media(min-width:990px) and (max-width:1060px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1240px) {
+    .text-container {
+        right: auto;
+        margin-left: -100px;
+
+    }
+}
+
+@media (max-width:980px) {
+   
+
+    .navbar-brand {
+        padding-left: 0 !important;
+    }
+
+}
