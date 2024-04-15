@@ -103,10 +103,14 @@ padding: 0 90px;
     border:1px solid ;
     border-color:rgba(12,178,57,1);
     margin-right:  10px;
+    cursor: pointer;
 }
 .dot:hover{
     background-color:rgba(12,178,57,1) ;
     transition: all 0.3s;
+}
+.dot.active {
+    background-color: green; /* Set the background color of the active dot */
 }
   
 
@@ -126,10 +130,10 @@ ul .nav-link:hover {
 }
 .right img{
     max-width:100%;
+    position: relative;
 }
-.right{
-    max-width: 50%;
-}
+
+
 .navbar-brand{
 padding-left: 70px;}
 
@@ -527,6 +531,46 @@ margin-right: 40px;
 height: 100vh;    
 padding: 0;    }
 
+
+
+.hero {
+    position: relative;
+    /* Your existing styles */
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+width:50%;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding:0 6px;
+    background-color: rgba(255, 222, 173,0);
+    border-radius: 50%;
+    font-size:18px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .arrow:hover{
+    background-color: #ffffff;
+    color: #006b31;
+    transition: all 0.3s;
+  }
+  .prev {
+    left: 3%;
+  }
+  
+  .next {
+    right: 5%;
+  }
+  
 .list-unstyled{
             margin: 0;
             margin-top: 65px;
@@ -554,19 +598,16 @@ max-width:200px ;
 
         
 
-        @media (max-width: 896px){
-          
-.right img{
-    max-width: 130%;
-}
-
-        }
+       
         @media (max-width: 767px) {
         .footer{
             height: fit-content;
         }
         #footer-container img{
             display: none;
+        }
+        .left p{
+            max-width: 250px;
         }
         }
         @media (max-width: 1400px) {
@@ -622,15 +663,15 @@ margin-right: 10px;
             z-index: 1;
 
            }
-            .right img{
-                max-width: 200%;
-            }
             .left h2, .left p, .left .btns{
 z-index: 2;    
             }
         }
             @media (max-width: 655px)  {
-            .right{
+            .carousel{
+                display: none;
+            }
+            .arrow{
                 display: none;
             }
            
@@ -641,7 +682,19 @@ width: 100%;                            }
                 padding-bottom: 20px;
             }
             }
+            @media (max-width: 835px){
+          .carousel{
+position: absolute;
+right: 0;
+bottom: 0;
 
+        }
+        
+        .left{
+            max-width: 500px;
+        }
+            
+            }
             @media (max-width: 1217px)  {
             
             .col-md-4{
@@ -669,6 +722,7 @@ width: 100%;                            }
                 max-width: 70%;
                 margin-top: 20px;
             }
+            
             }
 
             @media (max-width:1200px){
