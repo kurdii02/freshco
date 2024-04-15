@@ -549,14 +549,11 @@
     var $carousel = $('.hero .carousel');
 
     $carousel.on('init', function(event, slick){
-        // Set the background color of the first dot to green when the carousel is initialized
         $('.hero .dots .dot:first-child').addClass('active');
     });
 
     $carousel.on('afterChange', function(event, slick, currentSlide){
-        // Remove the 'active' class from all dots
         $('.hero .dots .dot').removeClass('active');
-        // Set the background color of the dot corresponding to the current slide to green
         $('.hero .dots .dot').eq(currentSlide).addClass('active');
     });
 
@@ -577,7 +574,6 @@
         $carousel.slick('slickNext');
     });
 
-    // Click event handler for dots
     $('.hero .dots .dot').click(function(){
         var index = $(this).index();
         $carousel.slick('slickGoTo', index);

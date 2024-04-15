@@ -129,7 +129,7 @@ function displayMedia(page) {
     var gridWrapper = document.createElement('div');
     gridWrapper.className = 'media-grid';
 
-    var isFirstImageProcessed = false; // Flag to track whether the first image on the first page has been processed
+    var isFirstImageProcessed = false; 
 
     mediaList.forEach(function (media, index) {
         var mediaCardLink = document.createElement('a');
@@ -147,13 +147,11 @@ function displayMedia(page) {
         img.style.objectFit = 'cover'; 
         mediaCard.appendChild(img);
 
-        // Check if it's the first image on the first page and it hasn't been processed yet
         if (page === 1 && index === 0 && !isFirstImageProcessed) {
-            isFirstImageProcessed = true; // Update flag to indicate that the first image has been processed
-            // Create overlay for the first image on the first page
+            isFirstImageProcessed = true; 
             var overlay = document.createElement('div');
             overlay.className = 'overlay';
-            overlay.innerHTML = '<i class="fas fa-plus"></i>'; // Add plus icon to the overlay
+            overlay.innerHTML = '<i class="fas fa-plus"></i>'; 
             mediaCard.appendChild(overlay);
         }
 

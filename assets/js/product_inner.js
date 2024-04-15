@@ -82,47 +82,39 @@ window.addEventListener('DOMContentLoaded', function() {
     function adjustCarouselItems() {
         var screenWidth = window.innerWidth;
 
-        // Check if screen width is less than or equal to 954px
         if (screenWidth <= 1036) {
             var carouselItems = carouselInner.querySelectorAll('.carousel-item');
 
             carouselItems.forEach(function(item) {
                 var cards = item.querySelectorAll('.grid-card');
-                // If screen width is less than or equal to 527px
                 if (screenWidth <= 527) {
-                    // Show only 1 card
                     if (cards.length > 1) {
                         for (var i = 1; i < cards.length; i++) {
                             cards[i].style.display = 'none';
                         }
                     } else {
-                        // If there is only 1 card, ensure it is visible
                         cards.forEach(function(card) {
                             card.style.display = 'block';
                         });
                     }
                 } else if (screenWidth <= 780) {
-                    // If screen width is between 528px and 722px
-                    // Show only 2 cards
+                   
                     if (cards.length > 2) {
                         for (var i = 2; i < cards.length; i++) {
                             cards[i].style.display = 'none';
                         }
                     } else {
-                        // If there are less than or equal to 2 cards, ensure they are visible
                         cards.forEach(function(card) {
                             card.style.display = 'block';
                         });
                     }
                 } else {
-                    // If screen width is greater than 722px but less than or equal to 954px
-                    // Show only 3 cards
+                    
                     if (cards.length > 3) {
                         for (var i = 3; i < cards.length; i++) {
                             cards[i].style.display = 'none';
                         }
                     } else {
-                        // If there are less than or equal to 3 cards, ensure they are visible
                         cards.forEach(function(card) {
                             card.style.display = 'block';
                         });
@@ -130,7 +122,6 @@ window.addEventListener('DOMContentLoaded', function() {
                 }
             });
         } else {
-            // If screen width is greater than 954px, ensure all cards are visible
             var hiddenCards = carouselInner.querySelectorAll('.grid-card[style="display: none;"]');
             hiddenCards.forEach(function(card) {
                 card.style.display = 'block';
@@ -138,7 +129,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Call the adjustCarouselItems function when the page loads and when the window is resized
     window.addEventListener('resize', adjustCarouselItems);
     adjustCarouselItems();
 });

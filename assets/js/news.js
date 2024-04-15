@@ -129,7 +129,7 @@ function displayMedia(page) {
     var gridWrapper = document.createElement('div');
     gridWrapper.className = 'media-grid';
 
-    var isFirstImageProcessed = false; // Flag to track whether the first image on the first page has been processed
+    var isFirstImageProcessed = false; 
 
     mediaList.forEach(function (media, index) {
         var mediaCardLink = document.createElement('div');
@@ -148,44 +148,33 @@ function displayMedia(page) {
         mediaCard.appendChild(img);
 
       
-       // Create overlay for the first image on the first page
-
-    
-    // Create overlay container
-    // Create overlay container
+       
 var overlay = document.createElement('div');
 overlay.className = 'overlay';
 
-// Create container for calendar icon and date
 var dateContainer = document.createElement('div');
 
-// Create calendar icon
 var calendarIcon = document.createElement('i');
-calendarIcon.className = "fa fa-calendar"; // Font Awesome class for the calendar icon
+calendarIcon.className = "fa fa-calendar"; 
 dateContainer.appendChild(calendarIcon);
 
-// Create date element
 var dateElement = document.createElement('p');
-dateElement.textContent = '7/05/2022'; // Replace 'Your Date Here' with your desired date
+dateElement.textContent = '7/05/2022'; 
 dateContainer.appendChild(dateElement);
 
-// Append the date container to the overlay
 overlay.appendChild(dateContainer);
 
-// Create additional text element
 var additionalTextElement = document.createElement('h6');
 additionalTextElement.textContent = 'Contrary to popular belief, Lorem Ipsum is not. It has roots in a piece'; // Replace with your additional text
 overlay.appendChild(additionalTextElement);
 
-// Create button
-// Create button
+
 var buttonAnchor = document.createElement('a');
-buttonAnchor.textContent = 'Read More'; // Replace 'Your Button Text' with your desired button text
-buttonAnchor.href = 'news_inner.html'; // Set the href attribute to navigate to 'news_inner.html'
+buttonAnchor.textContent = 'Read More'; 
+buttonAnchor.href = 'news_inner.html'; 
 overlay.appendChild(buttonAnchor);
 
 
-// Append the overlay to the media card
 mediaCard.appendChild(overlay);
 
 
